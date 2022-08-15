@@ -22,7 +22,7 @@ public class ProcessKiller
         this.taskInterrupter.TaskWasAborted += () => this.ctokenSource.Cancel();
     }
 
-    public async Task Run()
+    public async Task RunAsync()
     {
         try
         {

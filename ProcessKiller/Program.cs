@@ -12,7 +12,7 @@ if (status == ValidationStatus.Success)
     ProcessKiller.ProcessKiller processKiller =
         new(parameters, logger, new ProcessKiller.TaskInterrupter.ConsoleTaskInterrupter());
 
-    await processKiller.Run();
+    await processKiller.RunAsync();
 }
 else
 {
